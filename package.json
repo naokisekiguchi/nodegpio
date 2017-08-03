@@ -1,0 +1,23 @@
+{
+  "name": "chirimen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chirimen.js",
+  "dependencies": {
+    "gpio": "^0.2.7",
+    "websocket": "^1.0.24"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.0.2",
+    "opener": "^1.4.3"
+  },
+  "scripts": {
+    "chirimen": "node chirimen.js",
+    "button": "firefox file://$PWD/examples/button/index.html",
+    "blink": "firefox file://$PWD/examples/LEDblink/index.html",
+    "test": "firefox file://$PWD/examples/gpioTest/index.html",
+    "start": "npm-run-all -p chirimen"
+  },
+  "author": "CHIRIMEN Open Hardware, naokisekiguchi",
+  "license": "MIT"
+}
